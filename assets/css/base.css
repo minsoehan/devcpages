@@ -68,6 +68,7 @@ main ul, main ol {
 a {
     text-decoration: none;
     color: var(--link-one);
+    overflow-wrap: break-word;
 }
 div.highlight {
     margin-bottom: 1rem;

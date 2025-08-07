@@ -5,6 +5,10 @@ title = 'Min Soe Han'
 [minify]
     minifyOutput = true
 
+[services]
+    [services.disqus]
+        shortname = 'minsoehan-com'
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]

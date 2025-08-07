@@ -1,7 +1,9 @@
 +++
 date = '2025-07-18T16:25:26+06:30'
 draft = false
-title = 'Checked Through Baggage'
+title = 'Checked-through Baggage'
+categories = 'open diary'
+tags = ['baggage', 'airport']
 +++
 
 2025-07-14 Monday လက်မှတ်ထုတ်၊ အထုတ်အပ်တော့ အထုတ်က ရန်ကုန်ထိ မရောက်။ transit မှာ အထုတ်ပြန်ထုတ်၊ လက်မှတ်အသစ်ထပ်ထုတ်ပြီး အထုတ်ပြန်အပ်ရမယ်။
