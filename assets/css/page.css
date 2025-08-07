@@ -39,6 +39,7 @@ main .page .categories-tags-container {
     margin: 3rem 0;
     padding: 1rem 0;
     border-top: 1px solid var(--line-three);
+    border-bottom: 1px solid var(--line-three);
 }
 @media screen and (max-width: 1200px) {
     main .page {
