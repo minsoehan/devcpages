@@ -43,11 +43,15 @@ if echo "$1" | grep "/$" >/dev/null 2>&1; then
     echo "Oops! your input is not clean. Please remove / ending."
     exit 0
 fi
-if echo "$1" | grep "/*" >/dev/null 2>&1; then
+if echo "$1" | grep "/\*$" >/dev/null 2>&1; then
     echo "Oops! your input is not clean. Please remove /* ending."
     exit 0
 fi
-if echo "$1" | grep "/\ " >/dev/null 2>&1; then
+if echo "$1" | grep "/\*\s" >/dev/null 2>&1; then
+    echo "Oops! your input is not clean. Please remove /*  ending."
+    exit 0
+fi
+if echo "$1" | grep "/\s" >/dev/null 2>&1; then
     echo "Oops! your input is not clean. Please remove /  ending."
     exit 0
 fi
