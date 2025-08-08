@@ -1,7 +1,7 @@
 +++
 date = '2025-08-07T11:59:50+06:30'
 draft = false
-title = 'No Framework Preset in Cloudflare Pages Project Setting'
+title = 'No Framework Preset in Cloudflare Pages Project Settings'
 categories = 'open diary'
 tags = ['cloudflare', 'hugo', 'website']
 +++
