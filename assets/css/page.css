@@ -36,7 +36,7 @@ main .page time {
     margin-bottom: 1rem;
 }
 main .page .categories-tags-container {
-    margin: 3rem 0;
+    margin: 3rem 0 2rem 0;
     padding: 1rem 0;
     border-top: 1px solid var(--line-three);
     border-bottom: 1px solid var(--line-three);
