@@ -6,9 +6,9 @@ categories = 'open diary'
 tags = ['cloudflare', 'hugo', 'website']
 +++
 
-2025-08-06 Wednesday: Cloudflare Pages &rarr; project settings &rarr; Build configuration မှာ Framework preset ကို `Hugo` ထားပြီး Build command နေရာမှာ `hugo` နဲ့ Build output directory မှာ `public` ထားလို့ရတယ်။ အဲ့ဒါက `Hugo` ကိုရွေးရင် default ပဲ။ ဒါပေမယ့် Pagefind ကို သုံးတဲ့အခါ Build command ကို `hugo && npx pagefind --site "public"` ထားလို့ရတာမှန်ပေမယ့် စိတ်တိုင်းမကျ။ Cloudflare က တစ်ခါ build လုပ်တိုင်း `hugo` ကို run ပြီး pagefind ကို install လုပ်နေတယ်။ ပြီးတော့မှ `pagefind` ကို ထပ် run ရအုံးမယ်။ ကြာတယ်။ local မှာ လုပ်လို့ရနေမှတော့ ဘာလို့ခက်ခဲနေတော့မလဲ။ Framework preset မှာ `None` ကိုရွေးပြီး Build command နဲ့ Build output directory နှစ်ခုကို blank တွေထားလိုက်။
+2025-08-06 Wednesday: Cloudflare Pages &rarr; project settings &rarr; Build configuration မှာ Framework preset ကို `Hugo` ထားပြီး Build command နေရာမှာ `hugo` နဲ့ Build output directory မှာ `public` ထားလို့ရတယ်။ အဲ့ဒါက `Hugo` ကိုရွေးရင် default ပဲ။ ဒါပေမယ့် Pagefind ကို သုံးတဲ့အခါ Build command ကို `hugo && npx pagefind --site "public"` ထားလို့ရတာမှန်ပေမယ့် စိတ်တိုင်းမကျ။ Cloudflare က တစ်ခါ build လုပ်တိုင်း `hugo` ကို run ပြီး pagefind ကို install လုပ်နေတယ်။ ပြီးတော့မှ `pagefind` ကို ထပ် run ရအုံးမယ်။ ကြာတယ်။ local မှာ လုပ်လို့ရနေမှတော့ ဘာလို့ခက်ခဲနေတော့မလဲ။ Framework preset မှာ `None` ကိုရွေးပြီး Build command နဲ့ Build output directory နှစ်ခုကို blank တွေထားလိုက်။
 
-နောက်ပြီး `hugo --destination="/path/to/site-folder"` နဲ့ `npx pagefind --site "site-folder"` ကို သုံးတယ်။ ပြီးတော့မှ GitHub Repo ထဲကို push လုပ်တယ်။ နည်းနည်းတော့ ပိုရှုပ်သွားသလိုထင်ရပေမယ့် script ရေးထားလိုက်ရင်ရတာပဲ။
+နောက်ပြီး `hugo --destination="/path/to/site-folder"` နဲ့ `npx pagefind --site "site-folder"` ကို သုံးတယ်။ ပြီးတော့မှ GitHub Repo ထဲကို push လုပ်တယ်။ နည်းနည်းတော့ ပိုရှုပ်သွားသလိုထင်ရပေမယ့် script ရေးထားလိုက်ရင်ရတာပဲ။
 
 ```bash
 #!/bin/dash
