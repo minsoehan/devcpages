@@ -167,16 +167,16 @@ header #scrollup {
         display: none;
     }
     nav ul.main-menu-parents > li > a {
+        flex: 1;
         display: block;
         padding: 1rem;
-        width: 85%;
     }
     nav ul.main-menu-parents span.toggle-child-menu {
         display: block;
         padding: 0.5rem;
         border: 1px solid var(--line-four);
         border-radius: 3px;
-        margin-right: 1rem;
+        margin: 0 1rem;
     }
     nav ul.main-menu-children {
         position: initial;

@@ -3,18 +3,6 @@
     width: var(--m-width);
     margin: auto;
 }
-.home .block-one .inner-width {
-    display: flex;
-    flex-wrap: wrap;
-}
-.home .block-one .inner-width .svg-container {
-    flex: 0 0 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 2rem 0 1rem 0;
-    border-bottom: 1px solid var(--line-two);
-}
 .home .block-two .post-blocks article {
     padding: 1rem 0;
     margin-bottom: 1rem;
@@ -42,8 +30,5 @@
     .home .block-two .inner-width {
         width: 100%;
         padding: 0 2rem 0 1.5rem;
-    }
-    .home .block-one .inner-width .svg-container {
-        flex: 0 0 100%;
     }
 }
