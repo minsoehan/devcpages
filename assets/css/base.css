@@ -65,6 +65,12 @@ main {
 main h1, main h2, main h3, main h4, main p, main table {
     margin-bottom: 1rem;
 }
+.small-margin-bottom {
+    margin-bottom: 0.25rem !important;
+}
+.large-margin-bottom {
+    margin-bottom: 3rem !important;
+}
 main ul, main ol {
     padding-left: 1rem;
     margin-left: 1rem;
@@ -134,7 +140,7 @@ table.list td.title {
     font-weight: 600;
     text-align: left;
 }
-p code {
+p code, ul code, ol code {
     font-size: 1rem;
     background-color: lightgray;
     padding: 1px 3px;
