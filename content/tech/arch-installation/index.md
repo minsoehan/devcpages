@@ -6,22 +6,24 @@ categories = ['tech', 'linux']
 tags = ['arch linux', 'installation']
 +++
 
-Arch linux installation is not that hard if you do it simple as if:
+{{< extlink "https://archlinux.org/" "Arch linux" >}} installation is not that hard if you do it simple as if:
 
 - you don't need dual boot and just want to install it as first OS on your drive.
-- your computer is not too old and it supports GPT, UEFI, etc.
-- you don't need LVM, system encryption or RAID.
+- your computer is not too old and it supports {{< extlink "https://wiki.archlinux.org/title/Partitioning#GUID_Partition_Table" "GPT" >}}, {{< extlink "https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface" "UEFI" >}}, etc.
+- you don't need LVM, system encryption or {{< extlink "https://wiki.archlinux.org/title/RAID" "RAID" >}}.
 - you don't mind to read the wiki pages.
+
+See also: {{< extlink "https://wiki.archlinux.org/title/Installation_guide" "Official Installation Guide" >}}
 
 If so, it is done in 10 minutes (without downloading and installation time). In this tutorial, The Arch Linux is installed as
 
 - no dual boot, single OS
-- using GUID Partition Table (GPT) and EXT4 filesystem. Assuming storage device is /dev/sda, partition table is as follows:
+- using {{< extlink "https://wiki.archlinux.org/title/Partitioning#GUID_Partition_Table" "GUID Partition Table (GPT)" >}} and {{< extlink "https://wiki.archlinux.org/title/Ext4" "EXT4" >}} filesystem. Assuming storage device is `/dev/sda`, partition table is as follows:
     - `/dev/sda1` BOOT Partition and to be mounted to `/boot`.
     - `/dev/sda2` ROOT Partition and to be mounted to `/`.
     - `/dev/sda3` SWAP Partition and no need to be mounted to.
     - `/dev/sda4` HOME Partition and to be mounted to `/home`.
-- with Unified Extensible Firmware Interface (UEFI) using systemd-boot as bootloader
+- with {{< extlink "https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface" "Unified Extensible Firmware Interface (UEFI)" >}} using {{< extlink "https://wiki.archlinux.org/title/Systemd-boot" "systemd-boot" >}} as {{< extlink "https://wiki.archlinux.org/title/Arch_boot_process" "bootloader" >}}
 - keep it simple and stupid
 
 ### Preparing Installation Media
@@ -37,13 +39,13 @@ Getting the installation media booted up, choosing UEFI in boot menu if needed. 
 
 ### Connect to Internet
 
-To connect to internet (WiFi) using iwd.
+To connect to internet (WiFi) using {{< extlink "https://wiki.archlinux.org/title/Iwd" "iwd" >}}.
 
 ```text
 # iwctl
 ```
 
-for more details, see: Connect to a network
+for more details, see: {{< extlink "https://wiki.archlinux.org/title/Iwd#Connect_to_a_network" "Connect to a network" >}}
 {class="large-margin-bottom"}
 
 ### Partitioning and Formatting Partitions {class="small-margin-bottom"}
@@ -57,7 +59,7 @@ GPT fdisk is personally recommended for partitioning the disk. GPT fdisk— cons
 
 #### Formatting Partitions
 
-Partitioning the disk by `gdisk` is just creating partition table on the disk. Formatting is still needed. In other words, formatting is writing filesystem on the partition. In this tutorial, EXT4 Filesystem is used for all partition except /boot partition where bootlader's files will reside and which is created as EFI System Partition.
+Partitioning the disk by `gdisk` is just creating partition table on the disk. Formatting is still needed. In other words, formatting is writing {{< extlink "https://wiki.archlinux.org/title/File_systems" "filesystem" >}} on the partition. In this tutorial, {{< extlink "https://wiki.archlinux.org/title/Ext4" "EXT4 Filesystem" >}} is used for all partition except `/boot` partition where bootlader's files will reside and which is created as {{< extlink "https://wiki.archlinux.org/title/EFI_system_partition" "EFI System Partition" >}}.
 
 #### Example of Partitioning and Formatting
 
@@ -102,7 +104,7 @@ Mounting involves creating directories where the partitions will be mounted. Act
     - `/mnt/boot` for BOOT Partition
     - `/mnt/home` for HOME Partition
 3. Mount BOOT and HOME partitions to `/mnt/boot` and `/mnt/home`.
-4. Activate SWAP partition using `swapon`.
+4. Activate {{< extlink "https://wiki.archlinux.org/title/Swap" "SWAP" >}} partition using `swapon`.
 
 ```text {class="large-margin-bottom"}
 # mount /dev/sda2 /mnt
@@ -227,7 +229,7 @@ Uncomment the following line:
 ### Bootloader {class="small-margin-bottom"}
 #### Bootloader Installation
 
-See: {{< extlink "https://wiki.archlinux.org/title/Systemd-boot" "Systemd-boot" >}} for more details. Below command would be working only if EFI System Partition (ESP) is mounted to /boot or /efi. Mounting ESP to /boot is the most recommended and simplest. Read ESP Typical Mount Points for more knowledge.
+See: {{< extlink "https://wiki.archlinux.org/title/Systemd-boot" "Systemd-boot" >}} for more details. Below command would be working only if {{< extlink "https://wiki.archlinux.org/title/EFI_system_partition" "EFI System Partition (ESP)" >}} is mounted to `/boot` or `/efi`. Mounting `ESP` to `/boot` is the most recommended and simplest. Read {{< extlink "https://wiki.archlinux.org/title/EFI_system_partition#Typical_mount_points" "ESP Typical Mount Points" >}} for more knowledge.
 
 ```text
 # bootctl install
