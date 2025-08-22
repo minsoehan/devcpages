@@ -7,4 +7,5 @@ tags = ['weekly rest day', 'leave and holiday']
 +++
 
 {{< include-partial "legal/weekly-rest-day.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

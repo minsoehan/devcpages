@@ -7,4 +7,5 @@ tags = ['settlement of labor dispute', 'dispute']
 +++
 
 {{< include-partial "legal/settlement-of-labor-dispute.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

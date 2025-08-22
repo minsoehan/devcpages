@@ -7,4 +7,5 @@ tags = ['factories', 'work hours', 'child', 'young']
 +++
 
 {{< include-partial "legal/factories-act.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

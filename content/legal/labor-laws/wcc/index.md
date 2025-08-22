@@ -7,4 +7,5 @@ tags = ['workplace coordination committee', 'wcc', 'settlement of labor dispute'
 +++
 
 {{< include-partial "legal/wcc.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

@@ -65,11 +65,17 @@ main {
 main h1, main h2, main h3, main h4, main p, main table {
     margin-bottom: 1rem;
 }
-.small-margin-bottom {
-    margin-bottom: 0.25rem !important;
+.mb025rem {
+    margin-bottom: 0.25rem;
 }
-.large-margin-bottom {
-    margin-bottom: 3rem !important;
+.mb3rem {
+    margin-bottom: 3rem;
+}
+.mt2rem {
+    margin-top: 2rem;
+}
+.mt3rem {
+    margin-top: 3rem;
 }
 main ul, main ol {
     padding-left: 1rem;

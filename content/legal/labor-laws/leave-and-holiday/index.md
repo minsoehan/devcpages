@@ -5,5 +5,7 @@ title = 'ခွင့်ရက်နှင့် အလုပ်ပိတ်ရ�
 categories = ['legal', 'labor law']
 tags = 'leave and holiday'
 +++
+
 {{< include-partial "legal/leave-and-holiday.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

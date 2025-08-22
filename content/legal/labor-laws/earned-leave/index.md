@@ -7,4 +7,5 @@ tags = ['earned leave', 'leave and holiday']
 +++
 
 {{< include-partial "legal/earned-leave.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

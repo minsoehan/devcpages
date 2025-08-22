@@ -5,5 +5,7 @@ title = 'အခကြေးငွေပေးချေရေးနည်းဥ�
 categories = ['legal', 'labor law']
 tags = ['payment', 'wages', 'deduction', 'overtime formula']
 +++
+
 {{< include-partial "legal/payment-of-wages-rules.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

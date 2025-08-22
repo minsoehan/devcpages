@@ -5,5 +5,7 @@ title = 'အနည်းဆုံးအခကြေးငွေ နည်းဥ�
 categories = ['legal', 'labor law']
 tags = 'minimum wage'
 +++
+
 {{< include-partial "legal/minimum-wage-rules.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

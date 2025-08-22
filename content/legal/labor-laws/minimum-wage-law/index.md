@@ -5,5 +5,7 @@ title = '၂၀၁၃ ခုနှစ်၊ အနည်းဆုံး အခ�
 categories = ['legal', 'labor law']
 tags = 'minimum wage'
 +++
+
 {{< include-partial "legal/minimum-wage-law.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

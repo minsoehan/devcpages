@@ -7,4 +7,5 @@ tags = ['occupational safety', 'osh']
 +++
 
 {{< include-partial "legal/occupational-safety.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

@@ -7,4 +7,5 @@ tags = ['ec notification 2017', 'ec template']
 +++
 
 {{< include-partial "legal/ec-noti-template.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

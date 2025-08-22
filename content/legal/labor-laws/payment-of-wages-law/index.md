@@ -7,4 +7,5 @@ tags = ['payment', 'wages', 'deduction']
 +++
 
 {{< include-partial "legal/payment-of-wages-law.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

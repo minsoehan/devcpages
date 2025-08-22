@@ -5,5 +5,7 @@ title = 'အလုပ်အကိုင်နှင့် ကျွမ်းက�
 categories = ['legal', 'labor law']
 tags = ['employment', 'skill', 'employment contract']
 +++
+
 {{< include-partial "legal/employment-and-skill-development-law.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

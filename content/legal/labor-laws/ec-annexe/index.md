@@ -7,4 +7,5 @@ tags = ['employment contract', 'workplace rules']
 +++
 
 {{< include-partial "legal/ec-annexe.html" >}}
+
 {{< include-partial "legal/disclaimer-1.html" >}}

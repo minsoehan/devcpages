@@ -81,6 +81,9 @@ nav ul.main-menu-children > li > a {
     display: block;
     padding: 1rem;
 }
+nav a.active, nav a.ancestor {
+    color: var(--line-two);
+}
 
 nav ul.main-menu-parents .toggle-child-menu {
     display: none;
