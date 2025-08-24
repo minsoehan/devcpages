@@ -152,6 +152,15 @@ p code, ul code, ol code {
     padding: 1px 3px;
     border-radius: 2px;
 }
+table.table-style-one {
+    width: 100%;
+    border-collapse: collapse;
+}
+table.table-style-one th,
+table.table-style-one td {
+    text-align: left;
+    border-bottom: 1px solid var(--line-three);
+}
 /* hover only for desktop */
 @media (hover: hover) and (pointer: fine) {
     a:hover {
