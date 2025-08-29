@@ -134,6 +134,9 @@ header #scrollup {
         border-radius: 3px;
         line-height: 0;
     }
+    header a.main-search-icon {
+        border: 1px solid var(--line-two);
+    }
     #icon-close {
         display: none;
     }
