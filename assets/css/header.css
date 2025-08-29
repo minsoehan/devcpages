@@ -140,9 +140,6 @@ header #scrollup {
     header a.site-title {
         color: var(--main-bg);
     }
-    header a.main-search-icon {
-        color: var(--main-bg);
-    }
     header .row-one {
         background-color: var(--navbar-bg);
     }
