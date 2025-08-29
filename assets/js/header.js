@@ -68,10 +68,25 @@ function toggleMainMenu() {
     const mainMenu = document.querySelector('header div.row-two');
     if (!button || !mainMenu) return;
 
+    const iconMenu = document.getElementById('icon-menu');
+    const iconClose = document.getElementById('icon-close');
+
     button.addEventListener('click', function () {
         const isOpen = mainMenu.style.display === 'block';
-        mainMenu.style.display = isOpen ? 'none' : 'block';
-        button.innerHTML = isOpen ? 'menu' : 'close';
+        
+        if (isOpen) {
+            // Menu is currently open → close it
+            mainMenu.style.display = 'none';
+            iconMenu.style.display = 'block';   // show hamburger
+            iconClose.style.display = 'none';   // hide close
+            button.setAttribute("aria-label", "Open menu");
+        } else {
+            // Menu is currently closed → open it
+            mainMenu.style.display = 'block';
+            iconMenu.style.display = 'none';    // hide hamburger
+            iconClose.style.display = 'block';  // show close
+            button.setAttribute("aria-label", "Close menu");
+        }
     });
 }
 

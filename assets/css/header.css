@@ -25,12 +25,12 @@ header a.site-title {
     font-weight: 700;
 }
 header a.main-search-icon {
-    color: var(--main-fg);
+    background-color: var(--navbar-bg);
     display: block;
     padding: 3px 1rem;
-    border: var(--bor-two);
     border-radius: 6px;
     cursor: pointer;
+    line-height: 0;
 }
 
 header .row-two {
@@ -132,6 +132,10 @@ header #scrollup {
         padding: 3px;
         border: var(--bor-two);
         border-radius: 3px;
+        line-height: 0;
+    }
+    #icon-close {
+        display: none;
     }
     header a.site-title {
         color: var(--main-bg);
