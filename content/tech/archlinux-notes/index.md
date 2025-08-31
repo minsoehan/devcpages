@@ -2,6 +2,7 @@
 date = '2025-06-25T20:17:13+06:30'
 draft = false
 title = 'Archlinux Notes'
+description = 'Useful commands and notes for Arch linux.'
 categories = ['Tech', 'Linux']
 tags = ['Arch Linux', 'System', 'Command']
 +++

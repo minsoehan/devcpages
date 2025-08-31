@@ -2,6 +2,7 @@
 date = '2025-08-01T11:15:00+06:30'
 draft = false
 title = 'အလုပ်ခန့်ထားမှုဆိုင်ရာ သဘောတူညီချက်စာချုပ် နောက်ဆက်တွဲစည်းကမ်းများ'
+description = 'Workplace rules, Annexe (A) and (B) to Employment Contract in accordance with Employment and Skill Development Law.'
 categories = ['legal', 'labor law']
 tags = ['employment contract', 'workplace rules']
 +++

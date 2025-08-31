@@ -2,6 +2,7 @@
 date = '2025-08-08T16:35:50+06:30'
 draft = false
 title = 'Build Script for Cloudflare and Hugo'
+description = 'A script for hugo build and git push that Cloudflare will build site.'
 categories = ['tech', 'script']
 tags = ['cloudflare', 'hugo', 'build', 'pagefind']
 +++

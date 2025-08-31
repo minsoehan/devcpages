@@ -2,6 +2,7 @@
 date = '2025-07-17T15:22:29+06:30'
 draft = false
 title = 'အလုပ်အကိုင်နှင့် ကျွမ်းကျင်မှုဖွံ့ဖြိုးတိုးတက်ရေး ဥပဒေ'
+description = 'Employment and Skill Development Law in Myanmar Labor Laws.'
 categories = ['legal', 'labor law']
 tags = ['employment', 'skill', 'employment contract']
 +++

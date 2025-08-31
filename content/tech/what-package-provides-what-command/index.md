@@ -2,6 +2,7 @@
 date = '2025-06-22T19:22:44+06:30'
 draft = false
 title = 'What Package Provides What Command'
+description = 'Pacman commands to see what command is provided by what package in Arch linux.'
 categories = ['Tech', 'Linux']
 tags = ['Arch', 'System']
 +++

@@ -2,6 +2,7 @@
 date = '2025-08-07T10:42:47+06:30'
 draft = false
 title = 'Yangon Postal/Zip Codes'
+description = 'Postal/Zip codes of townships in Yangon.'
 categories = 'others'
 tags = 'postal codes'
 +++

@@ -2,6 +2,7 @@
 date = '2025-08-09T10:29:36+06:30'
 draft = false
 title = 'Myanmar Unicode and Disqus Comment Box'
+description = 'Problem of Myanmar Unicode text in Disqus comment box.'
 categories = 'tech'
 tags = ['myanmar unicode', 'disqus']
 +++

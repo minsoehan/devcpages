@@ -2,6 +2,7 @@
 date = '2025-08-28T15:15:22+06:30'
 draft = false
 title = 'Taxi Services in Yangon'
+description = 'Taxi services, Grab and Kilo in Yangon.'
 categories = 'others'
 tags = ['taxi', 'grab', 'kilo']
 +++

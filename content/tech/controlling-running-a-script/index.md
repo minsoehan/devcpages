@@ -2,6 +2,7 @@
 date = '2025-08-13T10:54:07+06:30'
 draft = false
 title = 'Controlling Running a Script'
+description = 'Controlling running a Script.'
 categories = 'tech'
 tags = ['dash', 'script']
 +++

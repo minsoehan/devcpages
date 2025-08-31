@@ -2,6 +2,7 @@
 date = '2025-06-23T10:59:30+06:30'
 draft = false
 title = 'Disable Drag Lock DWL'
+description = 'Disabling drag lock function in dwl wayland compositor.'
 categories = ['Tech', 'Linux']
 tags = ['Wayland', 'dwl', 'Window Manager']
 +++

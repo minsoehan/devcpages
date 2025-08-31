@@ -2,6 +2,7 @@
 date = '2025-06-26T14:29:08+06:30'
 draft = false
 title = 'Online Visa Application Photo'
+description = 'It is better to use original software of visa photo for photo upload in online visa application.'
 categories = 'open diary'
 tags = 'visa photo'
 +++

@@ -2,6 +2,7 @@
 date = '2025-08-09T11:44:34+06:30'
 draft = false
 title = 'အလုပ်ခန့်ထားမှုဆိုင်ရာ သဘောတူညီချက်စာချုပ် - ၂၀၁၇'
+description = 'Employment Contract in accordance with Employment and Skill Development Law in Myanmar Labor Laws.'
 categories = ['legal', 'employment contract']
 tags = ['ec notification 2017', 'ec template']
 +++

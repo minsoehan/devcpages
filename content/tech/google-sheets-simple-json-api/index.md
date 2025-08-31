@@ -2,6 +2,7 @@
 date = '2025-08-24T07:52:22+06:30'
 draft = false
 title = 'Turning Google Sheets into a Simple JSON API with Google Apps Script'
+description = 'Simple Google Sheets JSON API with Google Apps Script.'
 categories = ['tech', 'script']
 tags = ['google sheets', 'apps script']
 +++

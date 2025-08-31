@@ -2,6 +2,7 @@
 date = '2025-08-13T12:56:29+06:30'
 draft = false
 title = 'Git Rebase'
+description = 'Using git pull --rebase or git config pull.rebase true for git rebase.'
 categories = ['tech', 'dev']
 tags = ['git', 'rebase']
 +++

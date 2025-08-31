@@ -2,6 +2,7 @@
 date = '2025-07-16T12:06:37+06:30'
 draft = false
 title = '၂၀၁၆ ခုနှစ်၊ အခကြေးငွေပေးချေရေးဥပဒေ'
+description = 'Payment of Wages Law in Myanmar Labor Laws.'
 categories = ['legal', 'labor law']
 tags = ['payment', 'wages', 'deduction']
 +++

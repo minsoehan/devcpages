@@ -2,6 +2,7 @@
 date = '2025-07-30T16:56:47+06:30'
 draft = false
 title = 'အလုပ်ရပ်စဲခံရသော အလုပ်သမားများအတွက် နစ်နာကြေးနှုန်းထားများ'
+description = 'Severance payment or compensation rats based on work service in Myanmar Labor Laws.'
 categories = ['legal', 'labor law']
 tags = 'severance pay'
 +++

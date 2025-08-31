@@ -2,6 +2,7 @@
 date = '2025-06-23T11:53:16+06:30'
 draft = false
 title = 'Calibri Cambria Fonts Linux'
+description = 'Alternatives to Calibri and Cambria Fonts in Linux.'
 categories = ['Tech', 'Linux']
 tags = ['Font', 'Text']
 +++

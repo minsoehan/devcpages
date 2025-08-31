@@ -2,6 +2,7 @@
 date = '2025-07-28T15:45:21+06:30'
 draft = false
 title = 'About'
+description = 'About the personal website of Min Soe Han.'
 +++
 
 Welcome to my personal corner on the web. This site is a space where I share a mix of personal experiences, technical knowledge, and reflections on topics that matter to me. It’s part journal, part tech blog, and part resource hub—open to all who find value in what I write.

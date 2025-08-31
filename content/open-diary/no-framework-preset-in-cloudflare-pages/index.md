@@ -2,6 +2,7 @@
 date = '2025-08-07T11:59:50+06:30'
 draft = false
 title = 'No Framework Preset in Cloudflare Pages Project Settings'
+description = 'Writing a script to manage hugo build, pagefind and Cloudflare.'
 categories = 'open diary'
 tags = ['cloudflare', 'hugo', 'website']
 +++

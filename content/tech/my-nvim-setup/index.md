@@ -2,6 +2,7 @@
 date = '2025-08-13T13:33:08+06:30'
 draft = false
 title = 'My Neovim Setup'
+description = 'Setting up Neovim for basic settings, colors, LSP, Auto-completion, and others.'
 categories = ['tech', 'dev']
 tags = 'nvim'
 +++

@@ -2,6 +2,7 @@
 date = '2025-07-18T16:25:26+06:30'
 draft = false
 title = 'Checked-through Baggage'
+description = 'Why the baggage is not checked-through even in single ticket and same airline.'
 categories = 'open diary'
 tags = ['baggage', 'airport']
 +++

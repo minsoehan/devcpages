@@ -2,6 +2,7 @@
 date = '2025-06-26T16:28:53+06:30'
 draft = false
 title = '၁၉၅၁ ခုနှစ်၊ အလုပ်ရုံများ အက်ဥပဒေ'
+description = '1951, The Factories Act in Myanmar Labor Laws.'
 categories = ['legal', 'labor law']
 tags = ['factories', 'work hours', 'child', 'young']
 +++

@@ -2,6 +2,7 @@
 date = '2025-08-05T11:37:39+06:30'
 draft = false
 title = 'ရင်းနှီးမြှုပ်နှံသူ၏ ကင်းလွတ်ခွင့်နှင့် သက်သာခွင့်များ'
+description = 'Exemptions and concessions for investors in Myanmar.'
 categories = ['legal', 'investment']
 tags = 'exemptions'
 +++

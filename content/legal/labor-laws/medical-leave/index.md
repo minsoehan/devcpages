@@ -2,6 +2,7 @@
 date = '2025-08-02T11:35:51+06:30'
 draft = false
 title = 'ဆေးလက်မှတ်ခွင့်'
+description = 'Provisions of medical leave by 1951 Leave and Holiday Act and others in Myanmar Labor Laws.'
 categories = ['legal', 'labor law']
 tags = ['medical leave', 'sick leave', 'leave and holiday']
 +++

@@ -2,6 +2,7 @@
 date = '2025-08-05T11:10:09+06:30'
 draft = false
 title = 'ရင်းနှီးမြှုပ်နှံသူ၏ အာမခံထားရန်တာဝန်'
+description = 'Obligation of investors to provide insurance.'
 categories = ['legal', 'investment']
 tags = 'insurance'
 +++

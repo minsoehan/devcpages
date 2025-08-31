@@ -2,6 +2,7 @@
 date = '2025-08-14T10:56:15+06:30'
 draft = false
 title = 'Arch Linux Installation'
+description = 'Easy Arch linux installation guide.'
 categories = ['tech', 'linux']
 tags = ['arch linux', 'installation']
 +++
