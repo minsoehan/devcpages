@@ -1,0 +1,29 @@
+.overtime-formula-container {
+    max-width: 100%;
+    overflow: auto;
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 9px;
+    margin-bottom: 1rem;
+}
+.overtime-formula-container > table:first-child,
+.overtime-formula-container > table:nth-child(2) {
+    margin-bottom: 1rem;
+}
+table.overtime-formula {
+    border-collapse: collapse;
+    margin: 0;
+}
+table.overtime-formula caption {
+    text-align: left;
+    font-weight: 600;
+}
+table.overtime-formula tr td {
+    padding: 9px;
+    text-align: center;
+    white-space: nowrap;
+    width: 3px;
+}
+table.overtime-formula tr td.bottom-line {
+    border-bottom: 1px solid gray;
+}

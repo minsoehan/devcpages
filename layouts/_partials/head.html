@@ -1,16 +1,16 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H7R6FMDJ6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-9H7R6FMDJ6');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9H7R6FMDJ6');
 </script>
 <title>
-  {{ if .IsHome }}
-  {{ site.Title }}
-  {{ else }}
-  {{ printf "%s | %s" .Title site.Title }}
-  {{ end }}
+    {{ if .IsHome }}
+    {{ site.Title }}
+    {{ else }}
+    {{ printf "%s | %s" .Title site.Title }}
+    {{ end }}
 </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,20 +27,27 @@
 <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome.css">
 <link rel="stylesheet" href="/fonts/fontawesome/css/brands.css">
 <link rel="stylesheet" href="/fonts/fontawesome/css/solid.css">
+
 {{ partialCached "head/base.html" . }}
 {{ partialCached "head/header.html" . }}
 {{ partialCached "head/footer.html" . }}
+
 {{ if .IsHome }}
-{{ partialCached "head/home.html" . }}
+    {{ partialCached "head/home.html" . }}
 {{ else if .IsSection }}
-{{ partialCached "head/section.html" . }}
-{{ if eq .Params.section.add "search" }}
-{{ partialCached "head/search.html" . }}
-{{ end }}
+    {{ partialCached "head/section.html" . }}
 {{ else if .IsPage }}
-{{ partialCached "head/page.html" . }}
+    {{ partialCached "head/page.html" . }}
 {{ else if eq .Kind "taxonomy" }}
-{{ partialCached "head/taxonomy.html" . }}
+    {{ partialCached "head/taxonomy.html" . }}
 {{ else if eq .Kind "term" }}
-{{ partialCached "head/term.html" . }}
+    {{ partialCached "head/term.html" . }}
+{{ end }}
+
+{{ if eq .Params.section.add "search" }}
+    {{ partialCached "head/search.html" . }}
+{{ end }}
+
+{{ if eq .Params.page.add "overtime-formula" }}
+    {{ partialCached "head/OT-Formula.html" . }}
 {{ end }}

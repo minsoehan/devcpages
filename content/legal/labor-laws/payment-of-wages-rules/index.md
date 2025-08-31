@@ -4,6 +4,8 @@ draft = false
 title = 'အခကြေးငွေပေးချေရေးနည်းဥပဒေများ'
 categories = ['legal', 'labor law']
 tags = ['payment', 'wages', 'deduction', 'overtime formula']
+[params.page]
+    add = 'overtime-formula'
 +++
 
 {{< include-partial "legal/payment-of-wages-rules.html" >}}
