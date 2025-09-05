@@ -1,53 +1,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>
-  {{ if .IsHome }}
+    {{ if .IsHome }}
     {{ site.Title }}
-  {{ else }}
+    {{ else }}
     {{ printf "%s | %s" .Title site.Title }}
-  {{ end }}
+    {{ end }}
 </title>
-
 <meta name="description" content="{{ with .Description }}{{ . }} {{ end }}Personal website of Min Soe Han – sharing tech notes on Linux, Bash, Dash, JavaScript, Hugo, Cloudflare, plus insights on Myanmar Labour Laws, legal articles, and open diary stories.">
 
-<link rel="canonical" href="{{ .Permalink }}" />
-
-<!-- Social -->
-<meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
-<meta property="og:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-<meta property="og:description" content="{{ with .Description }}{{ . }} {{ else }}Personal website of Min Soe Han …{{ end }}">
-<meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:site_name" content="{{ site.Title }}">
-<meta property="og:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/default-share.png{{ end }}">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} | {{ site.Title }}{{ end }}">
-<meta name="twitter:description" content="{{ with .Description }}{{ . }} {{ else }}Personal website of Min Soe Han …{{ end }}">
-<meta name="twitter:image" content="{{ with .Params.featured_image }}{{ . }}{{ else }}/images/default-share.png{{ end }}">
-
-<!-- Sitemap + icons -->
 <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
 <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
 <link rel="shortcut icon" href="/favicon/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="/favicon/site.webmanifest" />
 
-<!-- Fonts & CSS -->
 <link rel="stylesheet" href="/fonts/material-symbols/outlined.css">
 <link rel="stylesheet" href="/fonts/material-symbols/rounded.css">
 <link rel="stylesheet" href="/fonts/fontawesome/css/fontawesome.css">
 <link rel="stylesheet" href="/fonts/fontawesome/css/brands.css">
 <link rel="stylesheet" href="/fonts/fontawesome/css/solid.css">
 
-<!-- Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H7R6FMDJ6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-9H7R6FMDJ6');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9H7R6FMDJ6');
 </script>
 
 {{ partialCached "head/base.html" . }}
