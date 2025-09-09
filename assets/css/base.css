@@ -71,6 +71,9 @@ main h1, main h2, main h3, main h4, main p, main table {
 .mb3rem {
     margin-bottom: 3rem;
 }
+.mt1rem {
+    margin-top: 1rem;
+}
 .mt2rem {
     margin-top: 2rem;
 }
