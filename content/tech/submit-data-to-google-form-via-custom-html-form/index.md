@@ -89,5 +89,7 @@ document.getElementById('yourFormID').addEventListener('submit', function (event
 });
 ```
 
+See also: https://stackoverflow.com/questions/44012261/getting-around-cors-with-embedded-google-forms
+
 In conclusion, the method 1 is more preferable. How do you think?
 {class="mb3rem"}
