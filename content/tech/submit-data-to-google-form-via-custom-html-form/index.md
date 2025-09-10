@@ -29,13 +29,10 @@ Submitting data to Google Form via custom HTML form is basically using POST meth
 In above structure, the input data will be submitted to the google form by default behavior. To bypass Google's **Submission Confirmed** page, it is redirected to hidden iframe using `target="hidden_iframe"`. And use a JavaScript like:
 
 ```js
-document.getElementById('yourFormID').target = 'hidden_iframe';
 const iframe = document.getElementById('hidden_iframe');
-if (iframe) {
-    iframe.onload = function () {
-        // now you can do stuff, such as displaying a message or redirecting to a new page.
-    }
-}
+iframe.addEventListener('load', () => {
+    // now you can do stuffs, such as displaying a message or redirecting to a new page.
+});
 ```
 
 Assuming iframe onload is successful form submission—even though we can not check it without looking at targeted page—we can do stuffs like displaying a message or redirecting to a new page. The same result can be achieved by another way using a js script. Structure like:
@@ -76,7 +73,7 @@ In above code, the most overlooked tricky part is the first line. The form can n
 
 ```js
 const form = document.getElementById('yourFormID');
-form.addEventListener('submit', function (event) => {
+form.addEventListener('submit', function (event) {
     // stuffs include fetch api are here.
 });
 ```
