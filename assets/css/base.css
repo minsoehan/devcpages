@@ -55,6 +55,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-wrap: break-word;
 }
 main {
     background-color: var(--main-bg);
@@ -92,7 +93,7 @@ p.space-one {
 a {
     text-decoration: none;
     color: var(--link-one);
-    overflow-wrap: break-word;
+    /* overflow-wrap: break-word; */
 }
 div.highlight {
     margin-bottom: 1rem;
