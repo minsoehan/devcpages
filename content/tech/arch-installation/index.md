@@ -5,6 +5,8 @@ title = 'Arch Linux Installation'
 description = 'Easy Arch linux installation guide.'
 categories = ['tech', 'linux']
 tags = ['arch linux', 'installation']
+[params.add]
+    codeblock = true
 +++
 
 {{< extlink "https://archlinux.org/" "Arch linux" >}} installation is not that hard if you do it simple as if:

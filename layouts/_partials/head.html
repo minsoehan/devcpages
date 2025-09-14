@@ -2,11 +2,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>
-  {{ if .IsHome }}
-    {{ site.Title }}
-  {{ else }}
-    {{ printf "%s | %s" .Title site.Title }}
-  {{ end }}
+    {{ if .IsHome }}
+        {{ site.Title }}
+    {{ else }}
+        {{ printf "%s | %s" .Title site.Title }}
+    {{ end }}
 </title>
 
 <meta name="description" content="{{ with .Description }}{{ . }} {{ end }}Personal website of Min Soe Han – sharing tech notes on Linux, Bash, Dash, JavaScript, Hugo, Cloudflare, plus insights on Myanmar Labour Laws, legal articles, and open diary stories.">
@@ -44,10 +44,10 @@
 <!-- Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9H7R6FMDJ6"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){ dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'G-9H7R6FMDJ6');
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-9H7R6FMDJ6');
 </script>
 
 {{ partialCached "head/base.html" . }}
@@ -66,10 +66,15 @@
     {{ partialCached "head/term.html" . }}
 {{ end }}
 
-{{ if eq .Params.section.add "search" }}
+{{ if .Params.add.search }}
     {{ partialCached "head/search.html" . }}
 {{ end }}
-
-{{ if eq .Params.page.add "overtime-formula" }}
-    {{ partialCached "head/OT-Formula.html" . }}
+{{ if .Params.add.overtimeformula }}
+    {{ partialCached "head/overtime-formula.html" . }}
+{{ end }}
+{{ if .Params.add.filetree }}
+    {{ partialCached "head/file-tree.html" . }}
+{{ end }}
+{{ if .Params.add.codeblock }}
+    {{ partialCached "head/code-header.html" . }}
 {{ end }}

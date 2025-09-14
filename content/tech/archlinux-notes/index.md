@@ -5,6 +5,8 @@ title = 'Archlinux Notes'
 description = 'Useful commands and notes for Arch linux.'
 categories = ['Tech', 'Linux']
 tags = ['Arch Linux', 'System', 'Command']
+[params.add]
+    codeblock = true
 +++
 
 ### Signing Error of System Upgrading

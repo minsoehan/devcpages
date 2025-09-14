@@ -5,6 +5,8 @@ title = 'Disable Drag Lock DWL'
 description = 'Disabling drag lock function in dwl wayland compositor.'
 categories = ['Tech', 'Linux']
 tags = ['Wayland', 'dwl', 'Window Manager']
+[param.page]
+    codeblock = true
 +++
 
 Disabling {{< inline-code >}}drag_lock{{< /inline-code >}} function in dwl is recommended if you are experiencing half a second delay on releasing mouse button simulated by touchpad.

@@ -5,6 +5,8 @@ title = 'Turning Google Sheets into a Simple JSON API with Google Apps Script'
 description = 'Simple Google Sheets JSON API with Google Apps Script.'
 categories = ['tech', 'script']
 tags = ['google sheets', 'apps script']
+[params.add]
+  codeblock = true
 +++
 
 Google Sheets isn’t just for storing data—it can also act as a lightweight database for your projects. With a few lines of Google Apps Script, you can transform your spreadsheet into a JSON API that any web app, static site, or script can consume.

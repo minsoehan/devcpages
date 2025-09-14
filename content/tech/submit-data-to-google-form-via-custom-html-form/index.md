@@ -4,6 +4,8 @@ draft = false
 title = 'Submit Data to Google Form via Custom Html Form'
 categories = ['tech', 'script']
 tags = ['javascript', 'google form', 'html']
+[params.add]
+    codeblock = true
 +++
 
 {{< disclaimer-page >}}

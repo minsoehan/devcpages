@@ -5,6 +5,8 @@ title = 'Controlling Running a Script'
 description = 'Controlling running a Script.'
 categories = 'tech'
 tags = ['dash', 'script']
+[params.add]
+    codeblock = true
 +++
 
 We often need to run our script avoiding certain situations like the followings.

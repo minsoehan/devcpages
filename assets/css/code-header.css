@@ -1,0 +1,20 @@
+.code-header {
+    position: relative;
+    background-color: #222;
+    color: lightgray;
+    font-family: monospace;
+    font-size: 1rem;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.code-header .text {
+    padding-left: 0.75rem;
+    border-bottom: 1px solid #444;
+}
+.code-header .copy-code-below {
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}

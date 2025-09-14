@@ -5,6 +5,8 @@ title = 'My Neovim Setup'
 description = 'Setting up Neovim for basic settings, colors, LSP, Auto-completion, and others.'
 categories = ['tech', 'dev']
 tags = 'nvim'
+[params.add]
+    codeblock = true
 +++
 
 {{< extlink "https://neovim.io/" "Neovim" >}} is a fork of {{< extlink "https://www.vim.org/" ""Vim >}} aiming to improve the codebase, allowing for easier implementation of APIs, improved user experience and plugin implementation.

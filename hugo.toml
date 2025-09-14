@@ -2,6 +2,13 @@ baseURL = 'https://minsoehan.com/'
 languageCode = 'en-us'
 title = 'Min Soe Han'
 
+[params]
+    [params.add]
+        search = false
+        overtimeformula = false
+        filetree = false
+        codeblock = false
+
 [minify]
     minifyOutput = true
 
@@ -13,6 +20,8 @@ title = 'Min Soe Han'
             [markup.goldmark.parser.attribute]
                 block = true
                 title = true
+    [markup.highlight]
+        style = 'github-dark'
 
 [menus]
     [[menus.main]]

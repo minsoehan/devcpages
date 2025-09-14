@@ -4,6 +4,8 @@ draft = false
 title = 'CSS overflow-wrap: break-word'
 categories = ['tech', 'web']
 tags = ['css', 'stylesheet']
+[params.add]
+  codeblock = true
 +++
 
 When designing for the web, one small but important detail is how browsers handle very long words or strings of text. On mobile screens especially, an unbroken word can stretch beyond the viewport and cause horizontal scrolling — something no user enjoys.

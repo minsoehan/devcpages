@@ -5,6 +5,8 @@ title = 'Git Rebase'
 description = 'Using git pull --rebase or git config pull.rebase true for git rebase.'
 categories = ['tech', 'dev']
 tags = ['git', 'rebase']
+[params.add]
+    codeblock = true
 +++
 
 {{< image-local src="git-rebase-3.jpg" alt="git rebase" >}}

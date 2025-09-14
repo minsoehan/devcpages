@@ -1,0 +1,39 @@
+ul.file-tree {
+    margin: 0;
+    background-color: lightgray;
+    font-family: monospace;
+    border-radius: 5px;
+    padding: 1rem 1rem 1rem 2rem;
+}
+ul.file-tree ul {
+    display: none;
+    margin-bottom: unset;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+ul.file-tree li {
+    list-style: none;
+    position: relative;
+}
+ul.file-tree li::before {
+    content: '—';
+    color: #bbb;
+    margin-right: 6px;
+}
+ul.file-tree ul li {
+    border-left: 1px solid #bbb;
+}
+ul.file-tree .toggle {
+    display: inline-flex;
+    width: 1.25rem;
+    height: 1.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #666;
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem; /* adjust this - cannot avoid hard coding yet */
+    left: -0.65rem; /* adjust this - cannot avoid hard coding yet */
+}

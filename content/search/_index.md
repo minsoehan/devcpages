@@ -3,8 +3,8 @@ date = '2025-06-25T16:35:27+06:30'
 draft = false
 title = 'Search in this Site'
 description = 'Search in this personal website of Min Soe Han. Useful for searching Myanmar Labor Laws provisions, tech notes of scripting, linux and others.'
-[params.section]
-    add = 'search'
+[params.add]
+    search = true
 +++
 
 **အသတ်-အောက်ကမြင့်** (့်) ကို **အောက်ကမြင့်-အသတ်** (့်) လို့ ရိုက်ပြီးရှာပါ။ ဥပမာ **ခကွေး-ဝဆွဲ-င-အသတ်-အောက်ကမြင့်** (ခွင့်) ကို **ခကွေး-ဝဆွဲ-င-အောက်ကမြင့်-အသတ်** (ခွင့်) လို့ ရိုက်ပြီးရှာပါ။

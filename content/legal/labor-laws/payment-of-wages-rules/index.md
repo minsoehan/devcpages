@@ -5,8 +5,8 @@ title = 'အခကြေးငွေပေးချေရေးနည်းဥ�
 description = 'Payment of Wages Rules in Myanmar Labor Laws.'
 categories = ['legal', 'labor law']
 tags = ['payment', 'wages', 'deduction', 'overtime formula']
-[params.page]
-    add = 'overtime-formula'
+[params.add]
+    overtimeformula = true
 +++
 
 {{< include-partial "legal/payment-of-wages-rules.html" >}}

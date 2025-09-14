@@ -1,0 +1,8 @@
+{{ $result := transform.HighlightCodeBlock . }}
+{{ $text := .Attributes.text | default "~" }}
+
+<div class="code-header">
+    <div class="text">{{ $text }}</div>
+    <div class="copy-code-below"><i class="fa-solid fa-copy"></i></div>
+    {{ $result.Wrapped }}
+</div>

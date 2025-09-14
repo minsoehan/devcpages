@@ -5,6 +5,8 @@ title = 'Build Script for Cloudflare and Hugo'
 description = 'A script for hugo build and git push that Cloudflare will build site.'
 categories = ['tech', 'script']
 tags = ['cloudflare', 'hugo', 'build', 'pagefind']
+[params.add]
+    codeblock = true
 +++
 
 In Cloudflare Pages → Project Settings → Build Configuration, I can set the Framework preset to `Hugo`, the Build command to `hugo`, and the Build output directory to `public`. That’s the default when selecting Hugo.

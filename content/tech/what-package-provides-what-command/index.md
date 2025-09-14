@@ -5,6 +5,8 @@ title = 'What Package Provides What Command'
 description = 'Pacman commands to see what command is provided by what package in Arch linux.'
 categories = ['Tech', 'Linux']
 tags = ['Arch', 'System']
+[params.add]
+    codeblock = true
 +++
 
 Sometime we just want to know which package is a command provided by? For instance, which package provides pactl command.  Then use pacman in Arch Linux.
