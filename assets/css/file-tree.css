@@ -4,6 +4,7 @@ ul.file-tree {
     font-family: monospace;
     border-radius: 5px;
     padding: 1rem 1rem 1rem 1.5rem;
+    white-space: nowrap;
     overflow: auto;
 }
 ul.file-tree ul {
