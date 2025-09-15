@@ -9,6 +9,7 @@
 }
 .code-header .text {
     padding-left: 0.75rem;
+    padding-right: 3rem;
     border-bottom: 1px solid #444;
 }
 .code-header .copy-code-below {

@@ -3,7 +3,8 @@ ul.file-tree {
     background-color: lightgray;
     font-family: monospace;
     border-radius: 5px;
-    padding: 1rem 1rem 1rem 2rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    overflow: auto;
 }
 ul.file-tree ul {
     display: none;

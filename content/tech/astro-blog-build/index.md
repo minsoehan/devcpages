@@ -70,6 +70,7 @@ export default defineConfig({
     ...
 });
 ```
+
 4. add `"strictNullChecks": true,` in the section of `"compilerOptions"` of `tsconfig.json` file:
 
 ```js {text="tsconfig.json"}
@@ -79,6 +80,7 @@ export default defineConfig({
     ...
 }
 ```
+
 5. create `src/content.config.ts` file with the following content:
 
 ```js {text="src/content.config.ts"}
@@ -99,6 +101,7 @@ const posts = defineCollection({
 
 export const collections = { posts };
 ```
+
 6. create `src/components/HeadCompo.astro` with the following content:
 
 ```ts {text="src/components/HeadCompo.astro"}
@@ -153,6 +156,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image.src, Astro.url)} />
 ```
+
 7. create `src/components/HeaderLink.astro` with the following content:
 
 ```ts {text="src/components/HeaderLink.astro"}
@@ -171,6 +175,7 @@ const isActive = href === pathname || href === '/' + (subpath?.[0] || '');
 	<slot />
 </a>
 ```
+
 8. create two files, `src/pages/posts/index.astro` and `src/pages/posts/[...slug].astro` with the following contents:
 
 ```ts {text="src/pages/posts/index.astro"}
@@ -232,4 +237,5 @@ const { Content } = await render(post);
 </Layout>
 
 ```
+
 9. at this stage, important files are completed, continue to create other directories and files, consult with this pages: https://docs.astro.build/ and https://codeberg.org/minsoehan/cloudflare-astro-blog-sample for more.

@@ -11,7 +11,7 @@ function copyLink () {
             if (!titleId) return;
             const link = `${window.location.origin}${window.location.pathname}#${titleId}`;
             navigator.clipboard.writeText(link);
-            alert('The link is copied.');
+            alert(`${link}\n\nThe link is copied.`);
         });
     });
 }
