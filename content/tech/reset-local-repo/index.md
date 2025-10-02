@@ -9,7 +9,7 @@ tag = ['git', 'dev']
     codeblock = true
 +++
 
-At any point, you will want to completely reset your local project so it matches the remote repo exactly (discarding any local changes, extra files, etc.).
+At any point, you may want to completely reset your local project so it matches the remote repo exactly (discarding any local changes, extra files, etc.).
 
 Here are the safe ways depending on how “hard” a reset you need:
 
@@ -102,3 +102,12 @@ git reset --hard origin main
 # error: unknown switch `m'
 # fatal: ambiguous argument 'origin': unknown revision or path not in the working tree.
 ```
+
+### Where You can Learn Git? {class="mt3rem"}
+
+Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.  
+The official website is:  
+https://git-scm.com/  
+and, cheat-sheet and references are:  
+https://git-scm.com/cheat-sheet  
+https://git-scm.com/docs
