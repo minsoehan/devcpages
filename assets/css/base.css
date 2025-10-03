@@ -67,21 +67,12 @@ main {
 main h1, main h2, main h3, main h4, main h5, main h6, main p, main table {
     margin-bottom: 1rem;
 }
-.mb025rem {
-    margin-bottom: 0.25rem;
-}
-.mb3rem {
-    margin-bottom: 3rem;
-}
-.mt1rem {
-    margin-top: 1rem;
-}
-.mt2rem {
-    margin-top: 2rem;
-}
-.mt3rem {
-    margin-top: 3rem;
-}
+.mb0{margin-bottom: 0;}
+.mb025rem{margin-bottom: 0.25rem;}
+.mb3rem{margin-bottom: 3rem;}
+.mt1rem{margin-top: 1rem;}
+.mt2rem{margin-top: 2rem;}
+.mt3rem{margin-top: 3rem;}
 main ul, main ol {
     padding-left: 1rem;
     margin-left: 1rem;

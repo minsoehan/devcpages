@@ -34,7 +34,7 @@ Fix:
 }
 ```
 
-### Combining Layout Astro Md {class="mt3rem"}
+### Combining Layouts, Astro and Md {class="mt3rem"}
 
 You may want unify them into a single layout by detecting whether the props come from `*.astro`, an astro page or `*.md`, a Markdown/MDX page.
 
