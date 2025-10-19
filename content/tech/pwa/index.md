@@ -149,7 +149,7 @@ In above files, `app-release-bundle.aab` is supposed to be uploaded to Google Pl
 
 #### 3. Signing the App {class="mt3rem"}
 
-Think of how the app `app-release-signed.apk` knows the website, `https://my-twa.com`, for e.g., that was given in the bubblewrap command, `bubblewrap init --manifest https://my-twa.com/manifest.json`. That is where **Signing the App** comes in. To sign the app, first find the SHA-256 Fingerprint key using `keytool` as follow:
+Think of how the app `app-release-signed.apk` knows the website, `https://my-twa.com`, for e.g., that was given in the bubblewrap command, `bubblewrap init --manifest https://my-twa.com/manifest.json` is truly owned by the owner of the app. That is where **Signing the App** comes in. To sign the app, find the SHA-256 Fingerprint key using `keytool` as follow:
 
 ```text {text="bash"}
 keytool -list -v -keystore android.keystore
@@ -186,7 +186,7 @@ Then create `assetlinks.json` because `bubblewrap build` command does not inhere
 ]
 ```
 
-In above example, there are two json objects. They are:
+The file must be inside `/.well-known` like `/.well-known/assetlinks.json`. In above example, the `package_name` is the name given to the prompt of `init` command. The default suggestion is reversed domain name with `.twa` extension. For example, if the domain is `mgmaemp.com`, then the default suggested `package_name` would be `com.mgmaemp.twa`. And there are two json objects. They are:
 
 - For `app-release-signed.apk`  
 `SHA-256` key from `keytool -list -v -keystore android.keystore` command

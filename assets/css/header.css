@@ -100,14 +100,16 @@ header i.fa-code {
 }
 header #scrollup {
     display: none;
-    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30%;
+    width: 4rem;
+    height: 4rem;
     position: fixed;
     bottom: 3rem;
     right: 3rem;
-    padding: 1rem 0.5rem;
     background-color: var(--line-two);
     color: var(--main-fg);
-    border-radius: 20%;
     opacity: 50%;
     cursor: pointer;
 }
