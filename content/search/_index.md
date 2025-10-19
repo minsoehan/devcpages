@@ -7,8 +7,6 @@ description = 'Search in this personal website of Min Soe Han. Useful for search
     search = true
 +++
 
-**အသတ်-အောက်ကမြင့်** (့်) ကို **အောက်ကမြင့်-အသတ်** (့်) လို့ ရိုက်ပြီးရှာပါ။ ဥပမာ **ခကွေး-ဝဆွဲ-င-အသတ်-အောက်ကမြင့်** (ခွင့်) ကို **ခကွေး-ဝဆွဲ-င-အောက်ကမြင့်-အသတ်** (ခွင့်) လို့ ရိုက်ပြီးရှာပါ။
-
 {{< inner-html >}}
 <div id="search"></div>
 <script>
