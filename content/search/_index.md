@@ -15,7 +15,10 @@ description = 'Search in this personal website of Min Soe Han. Useful for search
             element: "#search",
             showSubResults: true,
             showImages: false,
-            pageSize: 9
+            pageSize: 9,
+            processTerm: function (term) {
+                return term.replace(/\u103A\u1037/g, '\u1037\u103A');
+            }
             });
     });
 </script>
