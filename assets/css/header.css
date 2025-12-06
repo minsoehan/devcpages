@@ -112,6 +112,7 @@ header #scrollup {
     color: var(--main-fg);
     opacity: 50%;
     cursor: pointer;
+    z-index: 36;
 }
 /* hover only on desktop */
 @media (hover: hover) and (pointer: fine) {
