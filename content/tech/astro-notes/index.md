@@ -4,7 +4,7 @@ draft = false
 title = 'Astro Notes'
 description = 'Notes of Astro web framework.'
 categories = ['tech', 'web']
-tag = ['astro', 'dev']
+tags = ['astro', 'dev']
 [params.add]
     codeblock = true
 +++

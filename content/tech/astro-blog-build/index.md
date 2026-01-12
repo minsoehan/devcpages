@@ -3,7 +3,7 @@ date = '2025-09-14T13:20:43+06:30'
 draft = false
 title = 'Astro Blog Build'
 categories = ['tech', 'web']
-tag = ['cloudflare', 'astro']
+tags = ['cloudflare', 'astro']
 [params.add]
     codeblock = true
     filetree = true
