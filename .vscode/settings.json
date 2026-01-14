@@ -10,6 +10,7 @@
         "nvim",
         "onoff",
         "overtimeformula",
-        "scrollup"
+        "scrollup",
+        "swaybar"
     ]
 }
