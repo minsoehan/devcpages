@@ -9,9 +9,9 @@
         {{ range $paginator.Pages }}
         <article>
             <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-            <summary>
-                {{ .Summary | truncate 180 }}
-            </summary>
+            <div class="summary">
+                {{ .Summary }}
+            </div>
             <div class="time-readmore">
                 {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
                 {{ $dateHuman := .Date | time.Format ":date_long" }}
