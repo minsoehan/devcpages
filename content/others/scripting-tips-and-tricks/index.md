@@ -15,7 +15,7 @@ This is my collection of my tips and tricks for writing Bash or Dash scripts. Th
 If Bash is waiting for a command to complete and receives a signal for which a trap has been set, it will not execute the trap until the command completes. If Bash is waiting for an **asynchronous command via the wait builtin**, and it receives a signal for which a trap has been set, the wait builtin will return immediately with an exit status greater than 128, immediately after which the shell executes the trap.  
 ↳&nbsp;[https://www.gnu.org/software/bash/manual/html_node/Signals.html](https://www.gnu.org/software/bash/manual/html_node/Signals.html)
 
-Bash သို့မဟုတ် Dash script တွေမှာ command တစ်ခုပြီးအောင် စောင့်နေတဲ့အချိန် trap signal တစ်ခုလက်ခံရတဲ့အခါ ချက်ချင်းတုန့်ပြန်လိမ့်မယ်လို့ ထင်ခဲ့တယ်။ မဟုတ်ပါဘူး။ တကယ်က script ဟာ လက်ရှိ စောင့်နေတဲ့ command ပြီးမှ လက်ခံရခဲ့တဲ့ trap signal အတိုင်း ဆက်လက်ဆောင်ရွက်တာပါ။ ချက်ချင်းတုန့်ပြန်တာမျိုးကိုလိုချင်ရင်တော့ command ကို background မှာ run ခိုင်းပြီး wait နဲ့ စောင့်ကြည့်ရပါတယ်။ ဒါကို အထက်စာပိုဒ်မှာ ... waiting for an **asynchronous command via the wait builtin**, ... လို့ ဆိုပါတယ်။ **asynchronous** ဆိုတာ background ကိုဆိုလိုပါတယ်။ command အပြီး နောက်ဆုံးမှာ `&` လေးထည့်ပြီး run တာဖြစ်ပါတယ်။ ဥပမာ - `sleep 30 &` ဟာ background မှာ ၃၀ စက္ကန့်ဆိုင်းငံ့နေဖို့ ခိုင်းစေတဲ့ command ဖြစ်ပါတယ်။ ဒီသဘောတရားဟာ status bar တွေလို realtime update လုပ်ဖို့လိုတဲ့ script တွေရေးဖို့ အသုံးဝင်ပါတယ်။
+Bash သို့မဟုတ် Dash script တွေမှာ command တစ်ခုပြီးအောင် စောင့်နေတဲ့အချိန် trap signal တစ်ခုလက်ခံရရင် ချက်ချင်းတုန့်ပြန်လိမ့်မယ် ထင်ပါသလား။ မဟုတ်ပါဘူး။ တကယ်က script ဟာ လက်ရှိ စောင့်နေတဲ့ command ပြီးမှ လက်ခံရခဲ့တဲ့ trap signal အတိုင်း ဆက်လက်ဆောင်ရွက်ပါတယ်။ ချက်ချင်းတုန့်ပြန်တာမျိုး လိုချင်ရင် command ကို background မှာ run ခိုင်းပြီး wait နဲ့ စောင့်ကြည့်ရပါတယ်။ ဒါကို အထက်စာပိုဒ်မှာ ... waiting for an **asynchronous command via the wait builtin**, ... လို့ ဆိုပါတယ်။ **asynchronous** ဆိုတာ background ကိုဆိုလိုတာပါ။ command အပြီး နောက်ဆုံးမှာ `&` ထည့်ပြီး run ရပါတယ်။ ဥပမာ - `sleep 30 &` ဟာ background မှာ ၃၀ စက္ကန့်ဆိုင်းငံ့နေဖို့ ခိုင်းစေတဲ့ command ဖြစ်ပါတယ်။ ဒီသဘောတရားဟာ status bar တွေလို realtime update လုပ်ဖို့လိုတဲ့ script တွေရေးဖို့ အသုံးဝင်ပါတယ်။
 
 ```bash
 ...
@@ -76,4 +76,44 @@ done
 `mynoti` ဆိုတာကို ကြိုက်ရာနဲ့ အစားထိုးအသုံးပြုလို့ ရပါတယ်။  
 ↳&nbsp;[https://wiki.archlinux.org/title/Desktop_notifications#Replace_previous_notification](https://wiki.archlinux.org/title/Desktop_notifications#Replace_previous_notification)  
 ↳&nbsp;[https://wiki.archlinux.org/title/Desktop_notifications](https://wiki.archlinux.org/title/Desktop_notifications)
+
+#### Prevent While Loop Ignoring Interactive Command{class=mt2rem}
+
+command output ကို while loop ထဲ pipe လုပ်ခြင်းဟာ အရမ်းအသုံးဝင်တဲ့ နည်းတစ်ခု ဖြစ်ပါတယ်။ သို့သော် အဲ့သည့် while loop ထဲ ဥပမာ `read -p "Select Number: " SELNUM` ဆိုတာမျိုး interactive command တစ်ခုခု ပါလာပြီဆိုရင်တော့ ထင်သလိုအလုပ်မဖြစ်တော့ပါဘူး။ `read -p "Select Number: " SELNUM` မှာ user input ကို မစောင့်ဆိုင်းဘဲ looping ထဲက နောက်လာမယ့် result ကို feed လုပ်ပါလိမ့်မယ်။ ဥပမာ -
+
+```sh
+echo "aaa\nbbb\nccc\nddd" | while read LINE; do
+    read -p "Type A Number: " NUM
+    echo ""$NUM": "$LINE""
+done
+```
+
+အထက်မှာပြထားတာတဲ့ script မှာဆိုရင် `read -p "Type A Number: " NUM` နေရာမှာ user input ကို မစောင့်ဘဲ နောက်လာမယ့် result ကို feed လုပ်ပေးလိုက်မှာဖြစ်လို့ aaa ပြီးလာမယ့် bbb နဲ့ ccc ပြီးလာမယ့် ddd တို့ကို feed လုပ်လိုက်တာကြောင့် အောက်ကအတိုင်း ရပါလိမ့်မယ်။
+
+```sh
+bbb: aaa
+ddd: ccc
+```
+
+အဲ့သည့်အခြေအနေကို ကာကွယ်ချင်ရင်တော့ `read -p "Type A Number: " NUM` looping ကွင်းဆက်ထဲက ထုတ်ထားဖို့ပါပဲ။ looping ကွင်းဆက်ကို မကြည့်ဘဲ terminal `/dev/tty` ကို ကြည့်ခိုင်းထားရမှာဖြစ်ပါတယ်။ `command </dev/tty` ကို သုံးရပါတယ်။ အောက်တွင်ကြည့်ပါ။
+
+```sh
+echo "aaa\nbbb\nccc\nddd" | while read LINE; do
+    read -p "Type A Number: " NUM </dev/tty
+    echo ""$NUM": "$LINE""
+done
+```
+
+ဒါဆိုရင် script ဟာ looping result တစ်ခုစီတိုင်းအတွက် user input ကို စောင့်ဆိုင်းမှတ်သားပြီး အောက်ပါအတိုင်း ပေးပါလိမ့်မယ်။ ဥပမာ `Type A Mumber:` ဆိုတဲ့နေရာတိုင်းမှာ `1`, `2`, `3` နဲ့ `4` တို့ကို တစ်ခါစီရိုက်မယ်ဆိုပါစို့။
+
+```sh
+Type A Number: 1
+1: aaa
+Type A Number: 2
+2: bbb
+Type A Number: 3
+3: ccc
+Type A Number: 4
+4: ddd
+```
 
