@@ -1,2 +1,11 @@
 <link href="/pagefind/pagefind-component-ui.css" rel="stylesheet">
 <script src="/pagefind/pagefind-component-ui.js"></script>
+{{ with resources.Get "css/pf-override.css" }}
+{{ if hugo.IsDevelopment }}
+<link rel="stylesheet" href="{{ .RelPermalink }}">
+{{ else }}
+{{ with . | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+{{ end }}
+{{ end }}
+{{ end }}
