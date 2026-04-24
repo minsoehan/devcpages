@@ -1,6 +1,7 @@
 baseURL = 'https://minsoehan.com/'
 languageCode = 'en-us'
 title = 'Min Soe Han'
+summaryLength = 9
 
 [params]
     [params.add]
