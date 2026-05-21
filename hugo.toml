@@ -1,5 +1,5 @@
 baseURL = 'https://minsoehan.com/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Min Soe Han'
 summaryLength = 9
 
