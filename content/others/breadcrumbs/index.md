@@ -41,7 +41,7 @@ Website စာမျက်နှာများတွင် ထိပ်ဆု�
 }
 ```
 
-အောက်ပါ Breadcrumbs ကို အလွယ်တကူဖန်းတီးနိုင်သည်။
+ရိုးရှင်းသော Breadcrumbs တစ်ခုကို အလွယ်တကူဖန်းတီးနိုင်သည်။
 
 ```text
 Home » products » electrical » bulbs
