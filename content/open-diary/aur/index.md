@@ -266,8 +266,8 @@ esac
 
 အထက်ပါ dash script သည် AUR Package များကို search, download, install နှင့် update လုပ်နိုင်သော AUR Helper script ဖြစ်သည်။ လွတ်လပ်စွာ ရယူသုံးစွဲနိုင်သည်။ အဆိုးဖြစ်လျှင်လည်း ကိုယ်ဖြစ်ကိုယ်ခံ ဖြစ်ပါသည်။
 
-ArchLinux User တစ်ယောက်အနေဖြင့် AUR မရှိတော့သည့်တစ်နေ့ မိမိအသုံးပြုလိုသော software ကို မိမိဘာသာရှာ၍ မိမိဘာသာ PKGBUILD ဖိုင်ရေးရမည်သာ ဖြစ်တော့သည်။
-↳&nbsp;https://wiki.archlinux.org/title/PKGBUILD  
-↳&nbsp;https://wiki.archlinux.org/title/Makepkg
+ArchLinux User တစ်ယောက်အနေဖြင့် AUR မရှိတော့သည့်တစ်နေ့ မိမိအသုံးပြုလိုသော software ကို မိမိဘာသာရှာ၍ မိမိဘာသာ PKGBUILD ဖိုင်ရေးရမည်သာ ဖြစ်တော့သည်။  
+↳&nbsp;[https://wiki.archlinux.org/title/PKGBUILD](https://wiki.archlinux.org/title/PKGBUILD)  
+↳&nbsp;[https://wiki.archlinux.org/title/Makepkg](https://wiki.archlinux.org/title/Makepkg)
 
 ထိုမျှပင်မကသေး ArchLinux ကို သုံးရန် မသင့်တော့ဟု ခံစားရလာရသည့်တစ်နေ့ အခြား Linux distro သို့မဟုတ် အခြား operation system တစ်ခုကို ပြောင်းသုံးရန်လည်း တွေးထားရမည်။ မိမိအနေဖြင့် ArchLinux မဟုတ်တော့သည့်နေ့ [Crux](https://crux.nu/) သို့မဟုတ် [FreeBSD](https://www.freebsd.org/) ကို သုံးမည်ဖြစ်သည်။
