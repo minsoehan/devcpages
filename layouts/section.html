@@ -2,6 +2,7 @@
 {{ partial "breadcrumbs.html" . }}
 <div class="section">
     <section>
+        {{ partial "share-button.html" . }}
         <h1>{{ .Title }}</h1>
         {{ .Content }}
         {{ $pages := (.Pages.ByWeight).ByDate.Reverse }}

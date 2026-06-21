@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     copyLink();
+    shareButton();
 });
 
 // copy the link to clipboard
@@ -13,5 +14,13 @@ function copyLink () {
             navigator.clipboard.writeText(link);
             alert(`${link}\n\nThe link is copied.`);
         });
+    });
+}
+
+function shareButton() {
+    const shareButton = document.getElementById('shareButton');
+    shareButton.addEventListener('click', () => {
+        navigator.clipboard.writeText(window.location.href);
+        alert("The link has been copied to clipboard.");
     });
 }
