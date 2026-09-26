@@ -80,4 +80,22 @@ vim.keymap.set('n', '<C-S-Space>', '<Cmd>bprevious<CR>')
 vim.keymap.set('n', '<leader>n', '<C-w>w')
 ```
 
+နောက်တစ်ခုက buffer delete ပြဿနာ။ `:bd` နဲ့ ဖျက်တဲ့အခါ ရှိနေတဲ့ window layout ပျက်သွားတယ်။ အဲ့ဒါကြောင့် [bufdelete](https://github.com/famiu/bufdelete.nvim) လို plugin မျိုး ရှိနေတာဖြစ်တယ်။ အမှန်တော့ buffer delete ပြဿနာအတွက် usercmd တစ်ခုရေးထားရုံနဲ့တင် လုံလောက်သင့်တယ်။ အခြေခံအားဖြင့် buffer delete မလုပ်ခင် buffer number ကိုမှတ်၊ ပြီးတော့ `:bnext` လုပ်ကြည့်လိုက်၊ မရရင် ဖျက်ချင်တဲ့ buffer ဟာ သက်ဆိုင်ရာ window မှာ နောက်ဆုံးတစ်ခုဖြစ်လို့ အခြားတစ်ဖက်မှာ window တစ်ခုရှိနေရင် ပုံစံချထားတဲ့ window layout ပျက်တော့မယ်။ ဒါကြောင့် scratch buffer တစ်ခု ဖန်တီးပြီး အစားထိုး၊ ပြီးတော့မှ ဖျက်ချင်တာကို ဖျက်။ usercmd နမူနာက အောက်မှာ။
+
+```lua
+vim.api.nvim_create_user_command('Bdelete', function()
+    local buf = vim.api.nvim_get_current_buf()
+    if vim.bo[buf].modified then
+        vim.notify('Buffer has unsaved changes', vim.log.levels.WARN)
+    end
+    local win = vim.api.nvim_get_current_win()
+    vim.cmd('bnext')
+    if buf == vim.api.nvim_get_current_buf() then
+        local scratch = vim.api.nvim_create_buf(true, false)
+        vim.api.nvim_win_set_buf(win, scratch)
+    end
+    vim.cmd('bdelete ' .. buf)
+end, {})
+```
+
 Autocompletion အတွက်ကိုတော့ built-in တွေကိုပဲ သုံးဖို့ ဆုံးဖြတ်လိုက်တယ်။ Language Server Protocol (LSP) ကိုကြတော့ အနည်းဆုံး [lspconfig](https://github.com/neovim/nvim-lspconfig) plugin ကို install မှပဲ အဆင်ပြေတယ်။ programming language တစ်ခုချင်းစီအတွက် `vim.lsp.config({...})` တစ်ခုစီ လုပ်မနေနိုင်။ Autocompletion နဲ့ LSP အတွက် နောက်စာမျက်နှာတစ်ခု သပ်သပ်ရေးမှ အဆင်ပြေမယ်။
